@@ -1,4 +1,8 @@
 %% Allan Variance
+% Important: Allan doesn't calculate the actual variance. That is
+% calculated in another code. DO NOT FORGET this and load var and mu from
+% the memory; this could be fatal!
+%
 avar=cell(1,imax);
 ttau=cell(1,imax);%There might be a tau saved in the data, that's why I changed this to ttau
 for i1=1:imax
@@ -11,7 +15,8 @@ for i1=1:imax
     %%%there.
     %%%%
     if det_filt==1
-        Detector_Filter;tvec_dN1=tvec_dN1_I2(1:end);
+        Detector_Filter;
+        tvec_dN1=tvec_dN1_I2(1:end);
     end
     %Let's renormalise everything!
     tvec_dN1=tvec_dN1*w_m/pi;
@@ -53,7 +58,7 @@ grid on
 %converge to avar-->mu/(NT), where N=mu^2/var. with mu and var being the
 %usual mean and variance. Let's check this for our signal
 %mu=mean(dtj);var=std(dtj)^2;
-avar_asym=mu_./(ttau*mu_^2/var_);
+avar_asym=mu_./(ttau*N);
 %loglog(ttau*w_m/pi,sqrt(avar_asym),'r--','LineWidth',2)
 loglog(ttau,sqrt(avar_asym),'r--','LineWidth',2)
 legend('$\sigma_A$','$\sigma_{\rm asym}$','interpreter','latex')

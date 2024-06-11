@@ -41,7 +41,8 @@ for i1=imin:1:imax
     tvec_dN1=tvec_dN1*w_m/pi;
     %%%%This line will be passed only if you want to filter (detector dead time)
     if det_filt==1
-        Detector_Filter;tvec_dN1=tvec_dN1_I2(1:end);
+        Detector_Filter;
+        tvec_dN1=tvec_dN1_I2(1:end);
     end
     %%%%Otherwise carryout as usual
     dtjump=[diff([0,tvec_dN1])];sdtj=length(dtjump);
@@ -92,7 +93,8 @@ for i1=imin:1:imax
     %%%The detector parameters are set on the other code, check it out
     %%%there.
     if det_filt==1
-        Detector_Filter;tvec_dN1=tvec_dN1_I2(1:end);
+        Detector_Filter;
+        tvec_dN1=tvec_dN1_I2(1:end);
     end
     %Let's renormalise everything!
     tvec_dN1=tvec_dN1*w_m/pi;
