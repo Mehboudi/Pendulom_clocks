@@ -1,0 +1,2 @@
+%% In this sub-project, we opt the code for running a long time trajectory. This is simply done by storing only the latest value of each variable, instead of tracking the whole history. 
+The Jump times are however stored. That's all we need. Jump_times are a smaller vector, as we rarely observe jumps.
