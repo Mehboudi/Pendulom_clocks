@@ -1,7 +1,8 @@
 %% Simulate trajectories.
-% % If you have done it already, comment for further analysis
-imax=10;
-for i1=2:1:imax
+% % If you have done it already, comment for further analysis, otherwise it
+% re-runs and re-writes the data!!
+imax=100;
+for i1=10:1:imax
     [i1,imax]
     Factorisation;
     tvec_dN1=jump_times;

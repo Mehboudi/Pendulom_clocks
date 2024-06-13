@@ -28,7 +28,7 @@ for i1=1:imax
     [avar{1,i1},ttau{1,i1}]=allanvar(dtj','octave');
     % Allan_from_scratch;
     % avar{1,i1}=allvar;
-    % ttau{1,i1}=tauvec;
+    % ttau{1,i1}=tauvec; 
 end
 stau=zeros(1,imax);
 for i1=1:imax
