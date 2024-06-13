@@ -1,6 +1,6 @@
 %% Simulate trajectories.
 % % If you have done it already, comment for further analysis
-imax=100;
+imax=10;
 for i1=1:1:imax
     [i1,imax]
     Factorisation;
