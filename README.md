@@ -14,4 +14,4 @@ To get the data analysis (clock performance) one can run the remaining parts of 
 In Factorisation.mlx set ur=1 if you want to unravel (conditional evolution). set ur=0 if not.
 
 # If you want to see the dynamics
-The code run_factorisation_and_resample.m only depicts the clock performance. You cannot see the dynamics of different observables. For that, you can manually plot them (also, some codes are commented within the Factorisation code, check there too).
+The code run_factorisation_and_resample.m only depicts the clock performance. You cannot see the dynamics of different observables. For that, you can manually plot them (also, some codes are commented within the run_factorisation_and_resample.m code commented as load and analyse, check there too).
