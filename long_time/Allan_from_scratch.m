@@ -29,6 +29,7 @@ m = logspace(log10(1), log10(maxM), maxNumM).';
 m = ceil(m); % m must be an integer.
 m = unique(m); % Remove duplicates.
 
+t0=1;
 tau = m*t0;
 
 avard = zeros(numel(m), 1);

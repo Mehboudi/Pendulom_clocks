@@ -1,8 +1,8 @@
 %% Simulate trajectories.
 % % If you have done it already, comment for further analysis, otherwise it
 % re-runs and re-writes the data!!
-imax=100;
-for i1=10:1:imax
+imax=1;
+for i1=1:1:imax
     [i1,imax]
     Factorisation;
     tvec_dN1=jump_times;
@@ -103,10 +103,10 @@ N=mu_.^2./var_
 bin=200;
 figure
 hold on
-histogram(dtj,bin)
+histogram(dtj(2:end),bin)
 % Create xline
 xline([0 1 2]);
-tname=(['$\omega_m =$',num2str(w_m),';~~~$\mu=$',num2str(mu_),',~~$\sigma^2=$',num2str(var_),',~~$N=$',num2str(N)]);
+tname=(['$\omega_m =$',num2str(w_m),',~~~$\mu=$',num2str(mu_),',~~$\sigma^2=$',num2str(var_),',~~$N=$',num2str(N)]);
 title(tname,'Interpreter','latex')
 % Create xlabel
 xlabel('$\omega_m t/\pi$','Interpreter','latex');
