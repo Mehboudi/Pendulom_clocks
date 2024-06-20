@@ -21,7 +21,7 @@
 % end
 %%
 % The overlapping allanvariance
-xt=tvec_dN1;
+xt=tvec_dN1';
 maxNumM = 100;
 L = length(xt);
 maxM = 2.^floor(log2(L/2));
@@ -29,6 +29,7 @@ m = logspace(log10(1), log10(maxM), maxNumM).';
 m = ceil(m); % m must be an integer.
 m = unique(m); % Remove duplicates.
 
+t0=1;
 tau = m*t0;
 
 avard = zeros(numel(m), 1);

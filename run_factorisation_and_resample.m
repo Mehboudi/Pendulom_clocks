@@ -1,6 +1,6 @@
 %% Simulate trajectories.
 % % If you have done it already, comment for further analysis
-imax=10;
+imax=1;
 for i1=1:1:imax
     [i1,imax]
     Factorisation;
@@ -10,19 +10,19 @@ end
 % The standard plots
 % imax=6;imin=imax;
 % for i1=imin:1:imax
-%     load(['new_data_down_resloved_',num2str(i1)])
-%     figure
-%     plot(tvec_down,[t_p1_down;t_p2_down;t_p3_down])
-%     hold on
-%     xline(tvec_dN1,'-k','FontSize',2,'HandleVisibility','off')
-%     %----
-%     figure
-%     hold on
-%     plot(tvec_down,[t_x_m_down;1i*t_p_m_down])
-%     xline(tvec_dN1,'-k','FontSize',2,'HandleVisibility','off')
-%     %----
-%     figure
-%     plot(t_x_m_down,1i*t_p_m_down)
+    % load(['new_data_down_resloved_',num2str(i1)])
+    % figure
+    % plot(tvec_down,[t_p1_down;t_p2_down;t_p3_down;t_na_down])
+    % hold on
+    % %xline(tvec_dN1,'-k','FontSize',2,'HandleVisibility','off')
+    % %----
+    % figure
+    % hold on
+    % plot(tvec_down,[t_x_m_down;1i*t_p_m_down])
+    % %xline(tvec_dN1,'-k','FontSize',2,'HandleVisibility','off')
+    % %----
+    % figure
+    % plot(t_x_m_down,1i*t_p_m_down)
 % end
 % %-----------------
 % %   Tick stats; No filter
