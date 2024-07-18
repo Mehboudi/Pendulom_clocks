@@ -1,4 +1,4 @@
-# This is optimal if you want to fix n_hm and run the code through values of n_c.
+# This is optimal if you want to fix n_h, and run the code through values of n_c.
 
 # Thermodynamics
 Here, we want to calculate the thermodynamics quantities. We do as follows:
