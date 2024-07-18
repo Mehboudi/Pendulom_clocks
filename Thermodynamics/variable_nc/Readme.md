@@ -10,5 +10,5 @@ Here, we want to calculate the thermodynamics quantities. We do as follows:
 
 # How to run
 Run the first section of run_.... code in order to generate data, (will be automatically saved into various subfolders).
-Then run the next two sections to load and analyse the already saved data; for filtered and unfiltered scenarios. This will produce graphs of accuracy, heat current, and entropy production, vs n_h. 
+Then run the next two sections to load and analyse the already saved data; for filtered and unfiltered scenarios. This will produce graphs of accuracy, heat current, and entropy production, vs n_c. 
 
